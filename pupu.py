@@ -1,5 +1,7 @@
 #coding:L1
-d='';m=0
-for c in bytearray('[uZxYyX{X5,qX4)yX‡Y‡J00‡H22„E53ƒE52‚?@,/*x;”8–6š5œ4ž3Ÿ2¡2¢15+7+12+,*1*,*12)0).*0)~20)1).)1*}20)2)-)2)}20)2)-)2)}02)2)-)2)/3)1).)2).5)0)/*/*‚-8.3/„,­,­,­,­-«.©/¨0¦1£4ž8•'):
- d+=[" ","*"][m]*((c-40)%70);m=(m+1)%2
- if c>110:print(d);d='';c-=70;m=0
+d,m='',0
+t=['y“x–w—v™vSJv¤v¥w¥hNN¥fPP¢cSQ¡cSP ]^JŸY²V´T¸SºR¼Q½P¿PÀOSIUIŸOPIJHOHJHOÁPÀPÀPÀNÄMÇLdHMH KVLQM¢JËJËJËJËKÉLÇMÆNÄOÁR¼V³']
+if str!=bytes:t+=['L1']
+for c in bytearray(*t):
+ d+=c%70*" *"[m];m=(m+1)%2
+ if c>140:print(d);d=''
